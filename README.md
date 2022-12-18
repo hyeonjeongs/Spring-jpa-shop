@@ -1,2 +1,2 @@
 # Spring-jpa-shop
-Spring jpa study
+Spring jpa study!
