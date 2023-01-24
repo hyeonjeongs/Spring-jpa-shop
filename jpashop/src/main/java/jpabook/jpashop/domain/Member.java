@@ -21,6 +21,6 @@ public class Member {
     @Embedded
     private Address address;
 
-    @OneToMany(mappedBy = "member") //member 필드에 의해서 매핑된거
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL) //member 필드에 의해서 매핑된거
     private List<Order> orders = new ArrayList<>();
 }
