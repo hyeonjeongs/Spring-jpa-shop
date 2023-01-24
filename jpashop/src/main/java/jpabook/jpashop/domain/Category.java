@@ -18,6 +18,7 @@ public class Category {
 
     private String name;
 
+    // 다대다 - 중간 테이블을 생성하는식임
     @ManyToMany
     @JoinTable(name = "catogry_item",
         joinColumns = @JoinColumn(name= "category_id"),
